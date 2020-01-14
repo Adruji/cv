@@ -1,11 +1,11 @@
 <template>
   <v-app id="sandbox" :dark="setTheme">
     <v-card class="overflow-hidden">
-      <AppBar class="appbar" @dark="switchDark" :dark="dark"/>
+      <AppBar class="appbar" @dark="switchDark" :dark="dark" />
       <v-content class="appbar-offset">
         <v-sheet id="scrolling-techniques-5" class="overflow-y-auto">
           <v-container>
-            <Nuxt/>
+            <Nuxt />
           </v-container>
         </v-sheet>
       </v-content>
