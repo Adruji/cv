@@ -1,0 +1,29 @@
+.v-card__actions {
+  padding: 0px !important;
+}
+
+.v-expansion-panel::before {
+  box-shadow: none !important;
+}
+
+.v-timeline-item__dot {
+  box-shadow: none !important;
+}
+
+.v-timeline-item__dot {
+  width: auto !important;
+}
+
+.v-expansion-panel::after {
+  border-top: thin solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.2s border-color cubic-bezier(0.4, 0, 0.2, 1),
+    0.2s opacity cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.2s border-color cubic-bezier(0.4, 0, 0.2, 1),
+    0.2s opacity cubic-bezier(0.4, 0, 0.2, 1);
+}
