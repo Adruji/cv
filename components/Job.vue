@@ -15,7 +15,7 @@
       </v-list-item-avatar>
     </v-list-item>
     <v-card-text class="text--primary">
-      <div class="mb-5">{{job.details}}</div>
+      <div class="mb-5"><span v-html="job.details"></span></div>
       <v-chip
         class="mr-2 mt-2"
         :color="task.color"

@@ -237,7 +237,8 @@ export default {
           to: "2015-08"
         },
         mission: "Redesign et evolution of business tracker",
-        details: `Second internship, participated in renovating an aging php web application. Mainly graphical but also improving global performance and loading speed.`,
+        details: `Second internship, participated in renovating an aging php web application. <br/>
+                  Mainly graphical but also improving global performance and loading speed.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           {
@@ -269,7 +270,8 @@ export default {
           to: "2015-08"
         },
         mission: "Creating a new module for an existing web application",
-        details: `First internship. Joined a team of 5 to build a new data entry module for an existing web application.`,
+        details: `First internship. Joined a team of 5 to build a new data entry module for an existing web application. <br/>
+                  Learned the basics of C# and development on a Windows environment.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" }
@@ -299,12 +301,15 @@ export default {
           to: new Date()
         },
         mission: "Creating a PWA",
-        details: "",
+        details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
+                  I Also conceptualized the majority of the data schema, api and the whole web application. <br/>
+                  The app includes account management, geolocalisation (algolia api paired with OSM), and various others datas.
+                  Not in active development`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
-          { name: "Architecture", icon: "mdi-archi", color: "salmon" },
-          { name: "Deployment", icon: "mdi-deplo", color: "black" }
+          { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
+          { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" }
         ],
         stack: {
           back: ["nodejs", "graphql", "postgresql", "heroku"],
@@ -329,12 +334,16 @@ export default {
           to: "2018-11"
         },
         mission: "Creating a social network type application",
-        details: "",
+        details: `My first big scale solo project. Destined to be a large scale social app encouraging people to better themselves. <br/>
+                  First experience also with AWS, I ended up using a lot of aws products, mainly Elastic bean stalk, Cognito, Gateway, Amplify ... <br/>
+                  Features included account management, secured api, content creation and management, data analysis... <br/>
+                  I also managed full cloud deployment on aws. <br/>
+                  Development abandonned due to new job.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
-          { name: "Architecture", icon: "mdi-archi", color: "salmon" },
-          { name: "Deployment", icon: "mdi-deplo", color: "black" },
+          { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
+          { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" },
           {
             name: "Unit tests",
             icon: "mdi-code-tags-check",
@@ -343,7 +352,7 @@ export default {
         ],
         stack: {
           back: ["nodejs", "sequelize", "mysql", "linux", "aws", "gitlab"],
-          front: ["vuejs", "quasar"]
+          front: ["vuejs", "quasar", "amplify"]
         },
         management: ""
       }
