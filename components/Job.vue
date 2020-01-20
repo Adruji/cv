@@ -60,7 +60,7 @@
         <v-expansion-panel v-if="job.stack.back">
           <v-expansion-panel-header v-slot="{ open }">
             <v-row no-gutters>
-              <v-col cols="4">Back & Data</v-col>
+              <v-col cols="4">Back, Databases & Hosting</v-col>
               <v-col cols="8" class="text--secondary">
                 <v-fade-transition leave-absolute>
                   <span v-if="!open">

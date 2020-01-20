@@ -1,25 +1,22 @@
 <template>
   <div>
     <h1>BLOG BLOGdd</h1>
+    <div v-html="hello"></div>
   </div>
 </template>
 
 <script>
+import hello from '~/assets/blog/Article1.md'
+
 export default {
   data: function() {
-    return {
-      mdtext: `**This is bold text**
-      __This is bold text__
-      *This is italic text*
-      _This is italic text_
-      ~~Strikethrough~~
-      ## Blockquotesggggggggggfff
-      > Blockquotes can also be nested...
-      >> ...by using additional greater-than signs right next to each other...
-      > > > ...or with spaces between arrows`
-    };
+    return {}
   },
-  methods: {},
+  computed: {
+    hello() {
+      return hello
+    }
+  },
   transition: "blog"
 };
 </script>

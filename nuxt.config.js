@@ -17,7 +17,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Official Nuxt.js starter for CodeSandBox"
+        content: "Adrien Dujardin website"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
@@ -42,10 +42,9 @@ export default {
   modules: [
     // Doc: https://http.nuxtjs.org
     "@nuxt/http",
-    // TODO: Remove it if you want to eject from codeSandbox
-    "./codesandbox",
     "@nuxtjs/vuetify",
-    "@nuxtjs/svg"
+    "@nuxtjs/svg",
+    "@nuxtjs/markdownit"
   ],
 
   /*

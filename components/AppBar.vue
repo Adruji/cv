@@ -17,6 +17,9 @@
       <v-btn text @click="$emit('dark')">
         <v-icon>{{dark ? 'mdi-weather-sunny' : 'mdi-weather-night'}}</v-icon>
       </v-btn>
+      <v-btn text @click="$emit('invert')">
+        <v-icon>{{invert ? 'mdi-invert-colors' : 'mdi-invert-colors-off'}}</v-icon>
+      </v-btn>
     </template>
   </v-app-bar>
 </template>
@@ -24,7 +27,8 @@
 <script>
 export default {
   props: {
-    dark: Boolean
+    dark: Boolean,
+    invert: Boolean
   },
   data() {
     return {
@@ -49,5 +53,6 @@ export default {
   }
 };
 </script>
+
 <style>
 </style>

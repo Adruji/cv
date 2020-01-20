@@ -27,3 +27,8 @@
   transition: 0.2s border-color cubic-bezier(0.4, 0, 0.2, 1),
     0.2s opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.invertc {
+  filter: invert(100%);
+  transition: 0.3s;
+}

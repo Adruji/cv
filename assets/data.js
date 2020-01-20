@@ -33,8 +33,8 @@ export default {
           to: Date.now()
         },
         mission: "Complete rework of backend",
-        details: `This project was built from the ground up. I was recruited for my interest in new technologies and my knowledge of legacy code.
-          With a team of 5 developpers, we are building a new Rest API to replace the old WCF services.`,
+        details: `This project was built from the ground up. I was recruited for my interest in new technologies and my knowledge of legacy code. <br/>
+                  With a team of 5 developpers, we are building a new Rest API to replace the old WCF services.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -82,7 +82,8 @@ export default {
         },
         mission: "Desktop application / Web evolution and maintenance",
         details:
-          "Creation of new modules for an existing WPF application. I assured maintenance on the client website and did improve it's login security.",
+          `Creation of new modules for an existing WPF application. <br/>
+          I assured maintenance on the client website and did improve it's login security.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           {
@@ -123,8 +124,8 @@ export default {
           to: "2018-09"
         },
         mission: "Maintenance and evolution of insurance subscription software",
-        details: `First joined to help with software and web maintenance. Then joined a team of 10 to create a new product line from scratch.
-          I was specialized in C# development but also did some Java and Python.`,
+        details: `First joined to help with software and web maintenance. Then joined a team of 10 to create a new product line from scratch. <br/>
+                  I was specialized in C# development but also did some Java and Python.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           {
@@ -165,8 +166,8 @@ export default {
           to: "2016-11"
         },
         mission: "Evolutions for national distribution points software",
-        details: `Joined this project to build new modules and improve performance on a aging web application.
-        It implied doing a lot of optimisation of existing algorithms and bringing new technologies like caching.`,
+        details: `Joined this project to build new modules and improve performance on a aging web application. <br/>
+                  It implied doing a lot of optimisation of existing algorithms and bringing new technologies like caching.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -285,6 +286,38 @@ export default {
     ],
     personnal: [
       {
+        role: "JS Developper",
+        employer: {
+          name: "Myself",
+          logo: "",
+          type: "",
+          location: {
+            city: "Nantes",
+            country: "France"
+          }
+        },
+        client: null,
+        timeEmployed: {
+          from: "2019-12",
+          to: new Date()
+        },
+        mission: "Creating this website",
+        details: `Wanted a personnal website so here it is :) <br/>
+                  No api, all data based on markdown and json files <br/> 
+                  Source can be found here: <a href="https://github.com/Lolwned/cv">source</a>.`,
+        tasks: [
+          { name: "Development", icon: "mdi-laptop", color: "grey" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+          { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
+          { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" }
+        ],
+        stack: {
+          back: ["github", "zeit"],
+          front: ["vuejs", "nuxt", "vuetify"]
+        },
+        management: ""
+      },
+      {
         role: "Fullstack JS Developper",
         employer: {
           name: "Myself",
@@ -300,11 +333,11 @@ export default {
           from: "2019-01",
           to: new Date()
         },
-        mission: "Creating a PWA",
+        mission: "Sport organisation PWA",
         details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
                   I Also conceptualized the majority of the data schema, api and the whole web application. <br/>
-                  The app includes account management, geolocalisation (algolia api paired with OSM), and various others datas.
-                  Not in active development`,
+                  The app includes account management, geolocalisation (algolia api paired with OSM), and various others datas. <br/>
+                  Not in active development, to be resumed.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -312,8 +345,8 @@ export default {
           { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" }
         ],
         stack: {
-          back: ["nodejs", "graphql", "postgresql", "heroku"],
-          front: ["nuxt", "apollo", "bulma"]
+          back: ["nodejs", "graphql", "postgresql", "heroku", "gitlab"],
+          front: ["vuejs", "nuxt", "apollo", "bulma"]
         },
         management: ""
       },
@@ -333,7 +366,7 @@ export default {
           from: "2018-09",
           to: "2018-11"
         },
-        mission: "Creating a social network type application",
+        mission: "Social network type application",
         details: `My first big scale solo project. Destined to be a large scale social app encouraging people to better themselves. <br/>
                   First experience also with AWS, I ended up using a lot of aws products, mainly Elastic bean stalk, Cognito, Gateway, Amplify ... <br/>
                   Features included account management, secured api, content creation and management, data analysis... <br/>
@@ -353,6 +386,33 @@ export default {
         stack: {
           back: ["nodejs", "sequelize", "mysql", "linux", "aws", "gitlab"],
           front: ["vuejs", "quasar", "amplify"]
+        },
+        management: ""
+      },
+      {
+        role: "JS Developper",
+        employer: {
+          name: "Myself",
+          logo: "",
+          type: "",
+          location: {
+            city: "Nantes",
+            country: "France"
+          }
+        },
+        client: null,
+        timeEmployed: {
+          from: "2017-04",
+          to: "2017-06"
+        },
+        mission: "Discord bot",
+        details: `Created a personnalized discord bot for personnal use. <br/>`,
+        tasks: [
+          { name: "Development", icon: "mdi-laptop", color: "grey" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+        ],
+        stack: {
+          back: ["nodejs", "discordjs", "gitlab"],
         },
         management: ""
       }
