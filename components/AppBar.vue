@@ -12,7 +12,7 @@
   >
     <v-toolbar-title color="#09cfd6">Adrien Dujardin</v-toolbar-title>
     <template v-slot:extension>
-      <v-btn text v-for="item in items" :key="item.title" :to="item.title">{{item.title}}</v-btn>
+      <v-btn text v-for="item in items" :key="item.title" :to="'/'+item.title">{{item.title}}</v-btn>
       <v-spacer></v-spacer>
       <v-btn text @click="$emit('dark')">
         <v-icon>{{dark ? 'mdi-weather-sunny' : 'mdi-weather-night'}}</v-icon>

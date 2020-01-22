@@ -8,7 +8,7 @@
           loading="lazy"
         /> -->
       </div>
-      <v-btn text :key="key" :to="'article/'+post.title">{{post.title}}</v-btn>
+      <v-btn text :key="key" :to="'article/'+post.path">{{post.title}}</v-btn>
     </article>
   </div>
 </template>
@@ -35,6 +35,10 @@ export  default {
 </script>
 
 <style scoped>
+.v-application code {
+  all: unset;
+}
+
 .blog-enter-active,
 .blog-leave-active {
   transition-property: opacity;

@@ -1,14 +1,23 @@
+import path from 'path'
+
+const  hljs  =  require('highlight.js');
+const md = require('markdown-it')({ 
+  html: true,
+  highlight: function (str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return '<pre class="hljs"><code>' +
+        hljs.highlight(lang, str, true).value +
+        '</code></pre>';
+      } catch (__) {}
+    }
+    return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+  } 
+})
+
 export default {
-  /*
-   ** Rendering mode
-   ** Doc: https://nuxtjs.org/api/configuration-mode
-   */
   mode: "universal",
 
-  /*
-   ** Headers of the page
-   ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
-   */
   head: {
     title: "Adrien Dujardin",
     meta: [
@@ -20,50 +29,40 @@ export default {
         content: "Adrien Dujardin website"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+    ]
   },
 
-  /*
-   ** Global CSS
-   ** Doc: https://nuxtjs.org/api/configuration-css
-   */
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "~/assets/css/highlight.css"],
 
-  /*
-   ** Plugins to load before mounting the App
-   ** Doc: https://nuxtjs.org/guide/plugins
-   */
   plugins: [],
 
-  /*
-   ** Nuxt.js modules
-   ** Doc: https://nuxtjs.org/guide/modules
-   */
   modules: [
-    // Doc: https://http.nuxtjs.org
     "@nuxt/http",
     "@nuxtjs/vuetify",
-    "@nuxtjs/svg",
-    "@nuxtjs/markdownit"
+    "@nuxtjs/svg"
   ],
 
-  /*
-   ** HTTP module configuration
-   */
   http: {
     // See https://http.nuxtjs.org/api/#options
   },
 
-  /*
-   ** Build configuration
-   ** Doc: https://nuxtjs.org/api/configuration-build
-   */
   build: {
-    extend(config, ctx) {
-      config.module.rules.push({
-        test: /\.md$/,
-        use: ['raw-loader']
-      });
+    extend (config, _ctx) {
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          loader: 'frontmatter-markdown-loader',
+          include: path.resolve(__dirname, 'assets/blog/articles'),
+          options: {
+            markdown: (body) => {
+              return md.render(body)
+            },  
+            vue: true
+          }
+        }
+      )
     }
   },
 

@@ -10,14 +10,13 @@ export  const  mutations  = {
 
 export const actions = { 
 	async nuxtServerInit({ commit }) { 
-    let files = await require.context('~/assets/blog/articles/', true, /\.md$/);
+    let files = await require.context('~/assets/blog/articles/', false, /\.md$/);
     let posts = files 
     .keys() 
-    .map(key => { 
-      let res = {}; 
-      res.title = key.slice(11, -3); 
-      let sdate = key.slice(2, 10);
-      res.date = new Date(sdate.slice(0, 4), sdate.slice(4, 6), sdate.slice(6, 8));
+    .map(key => {
+      const markdown = require(`~/assets/blog/articles/${key.slice(2)}`)
+      let res = markdown.attributes;
+      res.path = key.slice(2, key.length - 3)
       return res; 
     })
     .sort((a, b) => { 

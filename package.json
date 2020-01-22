@@ -1,8 +1,8 @@
 {
-	"name": "codesandbox-nuxt",
+	"name": "AdriBlog",
 	"version": "1.0.0",
-	"description": "Nuxt starter for CodeSandBox",
-	"author": "Nuxt.js Team",
+	"description": "Nuxt blog",
+	"author": "Adri",
 	"private": true,
 	"scripts": {
 		"dev": "nuxt",
@@ -13,10 +13,11 @@
 	},
 	"dependencies": {
 		"@nuxt/http": "^0.3.0",
-		"@nuxtjs/markdownit": "^1.2.7",
 		"@nuxtjs/svg": "0.1.6",
 		"@nuxtjs/vuetify": "1.9.0",
 		"frontmatter-markdown-loader": "^3.1.0",
+		"highlight.js": "^9.18.0",
+		"markdown-it": "^10.0.0",
 		"nuxt": "^2.5.1",
 		"reqlim": "^0.0.0"
 	},
