@@ -1,19 +1,24 @@
-import path from 'path'
+import path from "path";
+import FMMode from "frontmatter-markdown-loader/mode";
 
-const  hljs  =  require('highlight.js');
-const md = require('markdown-it')({ 
+const hljs = require("highlight.js");
+const md = require("markdown-it")({
   html: true,
-  highlight: function (str, lang) {
+  highlight: function(str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
-        return '<pre class="hljs"><code>' +
-        hljs.highlight(lang, str, true).value +
-        '</code></pre>';
+        return (
+          '<pre class="hljs"><code>' +
+          hljs.highlight(lang, str, true).value +
+          "</code></pre>"
+        );
       } catch (__) {}
     }
-    return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
-  } 
-})
+    return (
+      '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + "</code></pre>"
+    );
+  }
+});
 
 export default {
   mode: "universal",
@@ -29,40 +34,33 @@ export default {
         content: "Adrien Dujardin website"
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   css: ["~/assets/css/main.css", "~/assets/css/highlight.css"],
 
   plugins: [],
 
-  modules: [
-    "@nuxt/http",
-    "@nuxtjs/vuetify",
-    "@nuxtjs/svg"
-  ],
+  modules: ["@nuxt/http", "@nuxtjs/vuetify", "@nuxtjs/svg"],
 
   http: {
     // See https://http.nuxtjs.org/api/#options
   },
 
   build: {
-    extend (config, _ctx) {
-      config.module.rules.push(
-        {
-          test: /\.md$/,
-          loader: 'frontmatter-markdown-loader',
-          include: path.resolve(__dirname, 'assets/blog/articles'),
-          options: {
-            markdown: (body) => {
-              return md.render(body)
-            },  
-            vue: true
-          }
+    extend(config, _ctx) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: "frontmatter-markdown-loader",
+        include: path.resolve(__dirname, "assets/blog/articles"),
+        options: {
+          markdown: body => {
+            return md.render(body);
+          },
+          vue: true,
+          mode: [FMMode.VUE_COMPONENT]
         }
-      )
+      });
     }
   },
 
