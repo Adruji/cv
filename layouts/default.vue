@@ -1,8 +1,15 @@
 <template>
   <v-app id="app" :dark="setTheme">
     <v-card class="overflow-hidden">
-      <AppBar class="appbar" @dark="switchDark" @invert="switchInvert" :dark="dark" :invert="invert" :class="{invertc: invert}"/>
-      <v-content class="appbar-offset" :class="{invertc: invert}">
+      <AppBar
+        class="appbar"
+        @dark="switchDark"
+        @invert="switchInvert"
+        :dark="dark"
+        :invert="invert"
+        :class="{ invertc: invert }"
+      />
+      <v-content class="appbar-offset" :class="{ invertc: invert }">
         <v-sheet id="scrolling-techniques-5" class="overflow-y-auto">
           <v-container>
             <Nuxt />
@@ -61,7 +68,4 @@ export default {
 #app {
   transition: 0.3s;
 }
-
-
 </style>
-

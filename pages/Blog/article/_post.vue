@@ -12,17 +12,16 @@
         </v-img>
       </div>
       <component class="markdown" :is="dynamicComponent" />
-      <div v-html="content" />
     </v-container>
   </v-content>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+import logo from "~/components/Logo.vue";
 
 export default {
   components: {
-    Logo
+    logo
   },
   data() {
     return {
@@ -56,5 +55,15 @@ export default {
   margin: auto;
   max-width: 90%;
   display: block;
+}
+
+.markdown >>> table {
+  border-collapse: collapse;
+}
+.markdown >>> th {
+  border-bottom: thin solid rgba(0, 0, 0, 0.12);
+}
+.markdown >>> tr:not(:last-child) {
+  border-bottom: thin solid rgba(0, 0, 0, 0.12);
 }
 </style>

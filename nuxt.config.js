@@ -1,5 +1,6 @@
 import path from "path";
 import FMMode from "frontmatter-markdown-loader/mode";
+var markdownItAttrs = require("markdown-it-attrs");
 
 const hljs = require("highlight.js");
 const md = require("markdown-it")({
@@ -18,7 +19,11 @@ const md = require("markdown-it")({
       '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + "</code></pre>"
     );
   }
-});
+})
+  .use(markdownItAttrs, {
+    allowedAttributes: ["id", "class", /^regex.*$/]
+  })
+  .use(require("markdown-it-div"));
 
 export default {
   mode: "universal",

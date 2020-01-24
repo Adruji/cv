@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid>
-    <v-row>
+  <div>
+    <v-row class="mx-auto">
       <v-col
         v-for="(post, key) in bloglist"
         :key="post.title"
@@ -9,7 +9,7 @@
         <BlogCard :post="post" />
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -41,10 +41,6 @@ export default {
 </script>
 
 <style scoped>
-.v-application code {
-  all: unset;
-}
-
 .blog-enter-active,
 .blog-leave-active {
   transition-property: opacity;
@@ -54,5 +50,9 @@ export default {
 .blog-enter,
 .blog-leave-to {
   opacity: 0;
+}
+
+.mx-auto {
+  max-width: 960px;
 }
 </style>
