@@ -12,13 +12,17 @@
   >
     <v-toolbar-title color="#09cfd6">Adrien Dujardin</v-toolbar-title>
     <template v-slot:extension>
-      <v-btn text v-for="item in items" :key="item.title" :to="item.title">{{item.title}}</v-btn>
+      <v-btn text v-for="item in items" :key="item.title" :to="'/' + item.to">{{
+        item.title
+      }}</v-btn>
       <v-spacer></v-spacer>
       <v-btn text @click="$emit('dark')">
-        <v-icon>{{dark ? 'mdi-weather-sunny' : 'mdi-weather-night'}}</v-icon>
+        <v-icon>{{ dark ? "mdi-weather-sunny" : "mdi-weather-night" }}</v-icon>
       </v-btn>
       <v-btn text @click="$emit('invert')">
-        <v-icon>{{invert ? 'mdi-invert-colors' : 'mdi-invert-colors-off'}}</v-icon>
+        <v-icon>{{
+          invert ? "mdi-invert-colors" : "mdi-invert-colors-off"
+        }}</v-icon>
       </v-btn>
     </template>
   </v-app-bar>
@@ -34,19 +38,20 @@ export default {
     return {
       items: [
         {
-          icon: "0",
+          title: "Home",
+          to: ""
+        },
+        {
           title: "Resume",
-          to: "resume"
+          to: "Resume"
         },
         {
-          icon: "1",
           title: "Projects",
-          to: "projects"
+          to: "Projects"
         },
         {
-          icon: "2",
           title: "Blog",
-          to: "blog"
+          to: "Blog"
         }
       ]
     };
@@ -54,5 +59,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

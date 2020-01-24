@@ -1,14 +1,33 @@
+import path from "path";
+import FMMode from "frontmatter-markdown-loader/mode";
+var markdownItAttrs = require("markdown-it-attrs");
+
+const hljs = require("highlight.js");
+const md = require("markdown-it")({
+  html: true,
+  highlight: function(str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return (
+          '<pre class="hljs"><code>' +
+          hljs.highlight(lang, str, true).value +
+          "</code></pre>"
+        );
+      } catch (__) {}
+    }
+    return (
+      '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + "</code></pre>"
+    );
+  }
+})
+  .use(markdownItAttrs, {
+    allowedAttributes: ["id", "class", /^regex.*$/]
+  })
+  .use(require("markdown-it-div"));
+
 export default {
-  /*
-   ** Rendering mode
-   ** Doc: https://nuxtjs.org/api/configuration-mode
-   */
   mode: "universal",
 
-  /*
-   ** Headers of the page
-   ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
-   */
   head: {
     title: "Adrien Dujardin",
     meta: [
@@ -23,46 +42,31 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
-  /*
-   ** Global CSS
-   ** Doc: https://nuxtjs.org/api/configuration-css
-   */
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "~/assets/css/highlight.css"],
 
-  /*
-   ** Plugins to load before mounting the App
-   ** Doc: https://nuxtjs.org/guide/plugins
-   */
   plugins: [],
 
-  /*
-   ** Nuxt.js modules
-   ** Doc: https://nuxtjs.org/guide/modules
-   */
-  modules: [
-    // Doc: https://http.nuxtjs.org
-    "@nuxt/http",
-    "@nuxtjs/vuetify",
-    "@nuxtjs/svg",
-    "@nuxtjs/markdownit"
-  ],
+  modules: ["@nuxt/http", "@nuxtjs/vuetify", "@nuxtjs/svg"],
 
-  /*
-   ** HTTP module configuration
-   */
   http: {
     // See https://http.nuxtjs.org/api/#options
   },
 
-  /*
-   ** Build configuration
-   ** Doc: https://nuxtjs.org/api/configuration-build
-   */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    extend(config, _ctx) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: "frontmatter-markdown-loader",
+        include: path.resolve(__dirname, "assets/blog/articles"),
+        options: {
+          markdown: body => {
+            return md.render(body);
+          },
+          vue: true,
+          mode: [FMMode.VUE_COMPONENT]
+        }
+      });
+    }
   },
 
   vuetify: {
