@@ -1,10 +1,12 @@
 ---
 title: Using Aws for my first project
+author: Adrien Dujardin
+category: Hosting
 published: true
 description: Basic stuff about aws
 tags: aws, cloud
 header: aws.png
-time: 2020-20-01
+date: 2020-01-22
 ---
 
 # AWS

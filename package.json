@@ -1,31 +1,31 @@
 {
-	"name": "AdriBlog",
-	"version": "1.0.0",
-	"description": "Nuxt blog",
-	"author": "Adri",
-	"private": true,
-	"scripts": {
-		"dev": "nuxt",
-		"build": "nuxt build",
-		"start": "nuxt start",
-		"generate": "nuxt generate",
-		"post-update": "yarn upgrade --latest"
-	},
-	"dependencies": {
-		"@nuxt/http": "^0.3.0",
-		"@nuxtjs/svg": "0.1.6",
-		"@nuxtjs/vuetify": "1.9.0",
-		"frontmatter-markdown-loader": "^3.1.0",
-		"highlight.js": "^9.18.0",
-		"markdown-it": "^10.0.0",
-		"markdown-it-attrs": "^3.0.1",
-		"markdown-it-div": "^1.1.0",
-		"nuxt": "^2.5.1",
-		"reqlim": "^0.0.0"
-	},
-	"devDependencies": {
-		"eslint": "^6.8.0",
-		"eslint-plugin-vue": "^6.1.2",
-		"prettier": "^1.19.1"
-	}
+  "name": "adriblog",
+  "version": "1.0.0",
+  "description": "Nuxt blog",
+  "author": "Adri",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.3.0",
+    "@nuxtjs/svg": "0.1.6",
+    "@nuxtjs/vuetify": "1.10.2",
+    "frontmatter-markdown-loader": "^3.1.0",
+    "highlight.js": "^9.18.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-attrs": "^3.0.1",
+    "markdown-it-div": "^1.1.0",
+    "nuxt": "^2.11.0",
+    "reqlim": "^0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "prettier": "^1.19.1"
+  }
 }

@@ -1,24 +1,17 @@
 <template>
   <v-app id="app" :dark="setTheme">
-    <v-card class="overflow-hidden">
-      <AppBar
-        class="appbar"
-        @dark="switchDark"
-        @invert="switchInvert"
-        :dark="dark"
-        :invert="invert"
-        :class="{ invertc: invert }"
-      />
-      <v-content class="appbar-offset" :class="{ invertc: invert }">
-        <v-sheet id="scrolling-techniques-5" class="overflow-y-auto">
-          <v-container>
-            <Nuxt />
-          </v-container>
-        </v-sheet>
-      </v-content>
-    </v-card>
+    <AppBar class="appbar" />
+    <v-content class="appbar-offset">
+      <v-container>
+        <Nuxt />
+      </v-container>
+    </v-content>
     <v-footer :inset="false" app>
       <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
+      <v-spacer />
+      <v-btn text @click="dark = !dark">
+        <v-icon>{{ dark ? "mdi-weather-sunny" : "mdi-weather-night" }}</v-icon>
+      </v-btn>
     </v-footer>
   </v-app>
 </template>
@@ -32,17 +25,8 @@ export default {
   },
   data: function() {
     return {
-      dark: false,
-      invert: false
+      dark: false
     };
-  },
-  methods: {
-    switchDark() {
-      this.dark = !this.dark;
-    },
-    switchInvert() {
-      this.invert = !this.invert;
-    }
   },
   computed: {
     setTheme() {
@@ -62,7 +46,7 @@ export default {
 }
 
 .appbar-offset {
-  margin-top: 220px;
+  margin-top: 80px;
 }
 
 #app {
