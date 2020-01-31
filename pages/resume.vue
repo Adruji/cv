@@ -1,13 +1,26 @@
 <template>
   <div>
     <div class="text-center">
-      <v-btn outlined to="Projects">Check my personnal projects here</v-btn>
+      <v-btn depressed to="Projects">Check my personnal projects here</v-btn>
     </div>
     <div v-if="!filteredExperiences">
-      <JobGhost v-for="n in 5" :key="'teub'+n" class="justify-center align-center" />
+      <JobGhost
+        v-for="n in 5"
+        :key="'teub' + n"
+        class="justify-center align-center"
+      />
     </div>
-    <div v-else v-for="job in filteredExperiences" :key="job.mission" class="py-4">
-      <Job :job="job" @filterSelect="filterExperiences" class="justify-center align-center" />
+    <div
+      v-else
+      v-for="job in filteredExperiences"
+      :key="job.mission"
+      class="py-4"
+    >
+      <Job
+        :job="job"
+        @filterSelect="filterExperiences"
+        class="justify-center align-center"
+      />
     </div>
   </div>
 </template>

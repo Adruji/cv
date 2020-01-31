@@ -7,8 +7,113 @@ export default {
     location: {
       city: "Nantes",
       country: "France"
-    }
+    },
+    intro: "I mainly am a wannabe full stack web developper",
+    externalsites: [
+      {
+        name: "Github",
+        icon: "mdi-github-circle",
+        link: "https://github.com/Lolwned"
+      },
+      {
+        name: "Gitlab",
+        icon: "mdi-github",
+        link: "https://gitlab.com/Lolwned"
+      },
+      {
+        name: "StackOverflow",
+        icon: "mdi-stack-overflow",
+        link: "https://stackoverflow.com/users/5044822/lolwned"
+      },
+      {
+        name: "Linkedin",
+        icon: "mdi-linkedin",
+        link: "https://www.linkedin.com/in/adrien-dujardin-104225a6/"
+      }
+    ]
   },
+  skills: [
+    {
+      name: "Rest Api",
+      level: 80,
+      color: "red"
+    },
+    {
+      name: "GraphQL Api",
+      level: 50,
+      color: "red"
+    },
+    {
+      name: "Docker",
+      level: 25,
+      color: "red"
+    },
+    {
+      name: "Javascript",
+      level: 80,
+      color: "red"
+    },
+    {
+      name: "VueJS",
+      level: 75,
+      color: "red"
+    },
+    {
+      name: "NuxtJS",
+      level: 60,
+      color: "red"
+    },
+    {
+      name: "Vuetify",
+      level: 80,
+      color: "red"
+    },
+    {
+      name: "Quasar",
+      level: 70,
+      color: "red"
+    },
+    {
+      name: "NodeJS",
+      level: 85,
+      color: "red"
+    },
+    {
+      name: "C#",
+      level: 80,
+      color: "red"
+    },
+    {
+      name: "Aws",
+      level: 30,
+      color: "red"
+    },
+    {
+      name: "SQL",
+      level: 40,
+      color: "red"
+    },
+    {
+      name: "Bulma",
+      level: 45,
+      color: "red"
+    },
+    {
+      name: "Ninja",
+      level: 5,
+      color: "red"
+    },
+    {
+      name: "10x engineer",
+      level: 1,
+      color: "red"
+    },
+    {
+      name: "Hacker",
+      level: 3,
+      color: "red"
+    }
+  ],
   experiences: {
     proffesionnal: [
       {
@@ -81,8 +186,7 @@ export default {
           to: "2019-04"
         },
         mission: "Desktop application / Web evolution and maintenance",
-        details:
-          `Creation of new modules for an existing WPF application. <br/>
+        details: `Creation of new modules for an existing WPF application. <br/>
           I assured maintenance on the client website and did improve it's login security.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
@@ -309,7 +413,11 @@ export default {
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
           { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
-          { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" }
+          {
+            name: "Deployment",
+            icon: "mdi-cloud-upload-outline",
+            color: "orange lighten-2"
+          }
         ],
         stack: {
           back: ["github", "zeit"],
@@ -342,7 +450,11 @@ export default {
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
           { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
-          { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" }
+          {
+            name: "Deployment",
+            icon: "mdi-cloud-upload-outline",
+            color: "orange lighten-2"
+          }
         ],
         stack: {
           back: ["nodejs", "graphql", "postgresql", "heroku", "gitlab"],
@@ -376,7 +488,11 @@ export default {
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
           { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
-          { name: "Deployment", icon: "mdi-cloud-upload-outline", color: "orange lighten-2" },
+          {
+            name: "Deployment",
+            icon: "mdi-cloud-upload-outline",
+            color: "orange lighten-2"
+          },
           {
             name: "Unit tests",
             icon: "mdi-code-tags-check",
@@ -409,10 +525,10 @@ export default {
         details: `Created a personnalized discord bot for personnal use. <br/>`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
-          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" }
         ],
         stack: {
-          back: ["nodejs", "discordjs", "gitlab"],
+          back: ["nodejs", "discordjs", "gitlab"]
         },
         management: ""
       }
