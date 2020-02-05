@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar fixed color="#09cfd6ee" dark flat>
+  <v-app-bar fixed color="#102542" dark flat>
     <v-btn text to="/">Adrien</v-btn>
     <v-spacer></v-spacer>
     <v-btn text v-for="item in items" :key="item.title" :to="'/' + item.to">{{

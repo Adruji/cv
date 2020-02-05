@@ -9,7 +9,7 @@ export default {
       country: "France"
     },
     intro: "I mainly am a wannabe full stack web developper",
-    externalsites: [
+    external: [
       {
         name: "Github",
         icon: "mdi-github-circle",
@@ -17,7 +17,7 @@ export default {
       },
       {
         name: "Gitlab",
-        icon: "mdi-github",
+        icon: "mdi-gitlab",
         link: "https://gitlab.com/Lolwned"
       },
       {
@@ -36,82 +36,67 @@ export default {
     {
       name: "Rest Api",
       level: 80,
-      color: "red"
+      icon: "swagger"
     },
     {
       name: "GraphQL Api",
       level: 50,
-      color: "red"
+      icon: "graphql"
     },
     {
       name: "Docker",
-      level: 25,
-      color: "red"
+      level: 20,
+      icon: "docker"
     },
     {
       name: "Javascript",
-      level: 80,
-      color: "red"
+      level: 75,
+      icon: "js"
     },
     {
       name: "VueJS",
       level: 75,
-      color: "red"
+      icon: "vuejs"
     },
     {
       name: "NuxtJS",
       level: 60,
-      color: "red"
+      icon: "nuxt"
     },
     {
       name: "Vuetify",
-      level: 80,
-      color: "red"
+      level: 70,
+      icon: "vuetify"
     },
     {
       name: "Quasar",
-      level: 70,
-      color: "red"
+      level: 60,
+      icon: "quasar"
     },
     {
       name: "NodeJS",
-      level: 85,
-      color: "red"
+      level: 70,
+      icon: "nodejs"
     },
     {
       name: "C#",
-      level: 80,
-      color: "red"
+      level: 75,
+      icon: "dotnetcore"
     },
     {
       name: "Aws",
       level: 30,
-      color: "red"
+      icon: "aws"
     },
     {
       name: "SQL",
-      level: 40,
-      color: "red"
+      level: 50,
+      icon: "mysql"
     },
     {
       name: "Bulma",
       level: 45,
-      color: "red"
-    },
-    {
-      name: "Ninja",
-      level: 5,
-      color: "red"
-    },
-    {
-      name: "10x engineer",
-      level: 1,
-      color: "red"
-    },
-    {
-      name: "Hacker",
-      level: 3,
-      color: "red"
+      icon: "bulma"
     }
   ],
   experiences: {

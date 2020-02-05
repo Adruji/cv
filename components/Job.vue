@@ -2,7 +2,7 @@
   <v-card max-width="960" elevation="0" outlined class="mx-auto">
     <v-list-item three-line>
       <v-list-item-content>
-        <v-list-item-title class="headline mb-1 cyan--text accent-3">
+        <v-list-item-title class="headline mb-1">
           {{ job.role }} •
           <span class="date font-weight-light">
             <Duration
@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import TechChip from "~/components/TechChip.vue";
 import Duration from "~/components/utils/Duration.vue";
 import StackPanel from "~/components/StackPanel.vue";
 
@@ -55,7 +54,6 @@ export default {
     job: Object
   },
   components: {
-    TechChip,
     Duration,
     StackPanel
   },
@@ -68,5 +66,9 @@ export default {
 <style scoped>
 .date {
   font-style: italic;
+}
+
+.headline {
+  color: #f87060;
 }
 </style>
