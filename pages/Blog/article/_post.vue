@@ -1,5 +1,8 @@
 <template>
   <v-content v-if="attributes">
+    <div class="text-center">
+      <v-btn depressed to="/Blog">Back to article list</v-btn>
+    </div>
     <v-container>
       <div class="mb-5">
         <v-img

@@ -1,9 +1,19 @@
 <template>
   <v-tooltip bottom>
     <template v-slot:activator="{ on }">
-      <img class="icon" :src="getSrcSvg()" v-bind:alt="tech" v-on="on">
+      <div class="techChip">
+        <v-img
+          class="icon"
+          height="40"
+          width="40"
+          contain
+          :src="getSrcSvg()"
+          v-bind:alt="tech"
+          v-on="on"
+        />
+      </div>
     </template>
-    <span>{{tech}}</span>
+    <span>{{ tech }}</span>
   </v-tooltip>
 </template>
 
@@ -24,9 +34,9 @@ export default {
 </script>
 
 <style scoped>
-.icon {
-  width: 40px;
-  height: 40px;
+.techChip {
+  width: 50px;
+  height: 50px;
   margin-right: 15px;
 }
 </style>

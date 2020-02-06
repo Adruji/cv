@@ -25,7 +25,7 @@ export default {
   },
   data: function() {
     return {
-      dark: false
+      dark: this.$vuetify.theme.dark
     };
   },
   computed: {

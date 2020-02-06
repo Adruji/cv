@@ -31,3 +31,7 @@
 .v-expansion-panels.theme--dark .v-expansion-panel::after {
   border-color: rgba(255, 255, 255, 0.12);
 }
+
+.theme--light.v-application {
+  color: #4b4f4e !important;
+}

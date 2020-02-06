@@ -57,12 +57,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .BlogCard {
-  border: solid 1px #09ced64a;
+  transition: all 0.2s ease-in-out;
 }
-
 .BlogCard:hover {
-  border: solid 1px #09ced6;
+  transform: scale(1.02);
 }
 </style>

@@ -30,14 +30,13 @@
         small
         v-for="task in job.tasks"
         :key="task.name"
-        @click.native="$emit('filterSelect', { selector: 'task', value: task })"
       >
         <v-icon left>{{ task.icon }}</v-icon>
         {{ task.name }}
       </v-chip>
     </v-card-text>
     <v-card-actions>
-      <v-expansion-panels accordion multiple :value="[0, 1]">
+      <v-expansion-panels accordion multiple>
         <StackPanel :stack="job.stack.front" name="Front" />
         <StackPanel :stack="job.stack.back" name="Back, Databases & Hosting" />
       </v-expansion-panels>

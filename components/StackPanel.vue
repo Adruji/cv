@@ -16,13 +16,17 @@
       </v-row>
     </v-expansion-panel-header>
     <v-expansion-panel-content>
-      <TechChip
-        v-for="tech in stack"
-        :key="tech"
-        :tech="tech"
-        class="d-inline-flex"
-        @click.native="$emit('filterSelect', { selector: 'tech', value: tech })"
-      />
+      <div class="d-flex flex-row">
+        <TechChip
+          v-for="tech in stack"
+          :key="tech"
+          :tech="tech"
+          class="d-inline-flex"
+          @click.native="
+            $emit('filterSelect', { selector: 'tech', value: tech })
+          "
+        />
+      </div>
     </v-expansion-panel-content>
   </v-expansion-panel>
 </template>
