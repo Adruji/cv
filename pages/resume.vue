@@ -3,11 +3,7 @@
     <div class="text-center">
       <v-btn depressed to="/Projects">Check my personnal projects here</v-btn>
     </div>
-    <div
-      v-for="job in jData.experiences.proffesionnal"
-      :key="job.mission"
-      class="py-4"
-    >
+    <div v-for="job in experiences" :key="job.mission" class="py-4">
       <v-lazy min-height="200" transition="fade-transition">
         <Job :job="job" class="justify-center align-center" />
       </v-lazy>
@@ -25,20 +21,8 @@ export default {
   },
   data: function() {
     return {
-      jData: data
+      experiences: data.experiences.proffesionnal
     };
-  },
-  methods: {
-    get(object, key) {
-      var keys = key.split(".");
-      for (var i = 0; i < keys.length; i++) {
-        if (!object.hasOwnProperty(keys[i])) {
-          return null;
-        }
-        object = object[keys[i]];
-      }
-      return object;
-    }
   },
   transition: "resume"
 };

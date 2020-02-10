@@ -119,7 +119,7 @@ export default {
           type: "Insurance"
         },
         timeEmployed: {
-          from: "2019-04",
+          from: "2019-06-25",
           to: Date.now()
         },
         mission: "Complete rework of backend",
@@ -167,8 +167,8 @@ export default {
           type: "Insurance"
         },
         timeEmployed: {
-          from: "2018-10",
-          to: "2019-04"
+          from: "2018-10-05",
+          to: "2019-05-24"
         },
         mission: "Desktop application / Web evolution and maintenance",
         details: `Creation of new modules for an existing WPF application. <br/>
@@ -209,8 +209,8 @@ export default {
           type: "Assurance"
         },
         timeEmployed: {
-          from: "2016-11",
-          to: "2018-09"
+          from: "2016-11-16",
+          to: "2018-08-31"
         },
         mission: "Maintenance and evolution of insurance subscription software",
         details: `First joined to help with software and web maintenance. Then joined a team of 10 to create a new product line from scratch. <br/>
@@ -251,8 +251,8 @@ export default {
           type: "Postal service"
         },
         timeEmployed: {
-          from: "2016-01",
-          to: "2016-11"
+          from: "2016-01-18",
+          to: "2016-11-15"
         },
         mission: "Evolutions for national distribution points software",
         details: `Joined this project to build new modules and improve performance on a aging web application. <br/>
@@ -294,8 +294,8 @@ export default {
           type: "Bank"
         },
         timeEmployed: {
-          from: "2015-10",
-          to: "2016-01"
+          from: "2015-10-20",
+          to: "2016-01-17"
         },
         mission: "Maintenance",
         details: `Built tools to speed up data analysis.`,
@@ -323,8 +323,8 @@ export default {
           type: "Electricity supplier"
         },
         timeEmployed: {
-          from: "2015-03",
-          to: "2015-08"
+          from: "2015-03-02",
+          to: "2015-08-28"
         },
         mission: "Redesign et evolution of business tracker",
         details: `Second internship, participated in renovating an aging php web application. <br/>
@@ -356,8 +356,8 @@ export default {
         },
         client: null,
         timeEmployed: {
-          from: "2015-03",
-          to: "2015-08"
+          from: "2013-04-02",
+          to: "2013-05-24"
         },
         mission: "Creating a new module for an existing web application",
         details: `First internship. Joined a team of 5 to build a new data entry module for an existing web application. <br/>
@@ -386,9 +386,10 @@ export default {
           }
         },
         client: null,
+        status: "play",
         timeEmployed: {
           from: "2019-12",
-          to: new Date()
+          to: null
         },
         mission: "Creating this website",
         details: `Wanted a personnal website so here it is :) <br/>
@@ -407,8 +408,7 @@ export default {
         stack: {
           back: ["github", "zeit"],
           front: ["vuejs", "nuxt", "vuetify"]
-        },
-        management: ""
+        }
       },
       {
         role: "Fullstack JS Developper",
@@ -422,9 +422,10 @@ export default {
           }
         },
         client: null,
+        status: "pause",
         timeEmployed: {
           from: "2019-01",
-          to: new Date()
+          to: null
         },
         mission: "Sport organisation PWA",
         details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
@@ -444,8 +445,7 @@ export default {
         stack: {
           back: ["nodejs", "graphql", "postgresql", "heroku", "gitlab"],
           front: ["vuejs", "nuxt", "apollo", "bulma"]
-        },
-        management: ""
+        }
       },
       {
         role: "Fullstack JS Developper",
@@ -459,6 +459,7 @@ export default {
           }
         },
         client: null,
+        status: "stop",
         timeEmployed: {
           from: "2018-09",
           to: "2018-11"
@@ -487,8 +488,7 @@ export default {
         stack: {
           back: ["nodejs", "sequelize", "mysql", "linux", "aws", "gitlab"],
           front: ["vuejs", "quasar", "amplify"]
-        },
-        management: ""
+        }
       },
       {
         role: "JS Developper",
@@ -502,20 +502,22 @@ export default {
           }
         },
         client: null,
+        status: "play",
         timeEmployed: {
           from: "2017-04",
-          to: "2017-06"
+          to: null
         },
         mission: "Discord bot",
-        details: `Created a personnalized discord bot for personnal use. <br/>`,
+        details: `Created a personnalized discord bot for personnal use. <br/>
+                  Originally developped for IRC, it includes a trivia game, ranking, witty interractions and more. <br/>
+                  Currently refactoring datastorage and integrating multi channel usage.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" }
         ],
         stack: {
           back: ["nodejs", "discordjs", "gitlab"]
-        },
-        management: ""
+        }
       }
     ]
   }

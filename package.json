@@ -12,13 +12,13 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@nuxt/http": "^0.3.0",
+    "@nuxt/http": "^0.3.9",
     "@nuxtjs/svg": "0.1.6",
     "@nuxtjs/vuetify": "1.10.2",
     "frontmatter-markdown-loader": "^3.1.0",
-    "highlight.js": "^9.18.0",
+    "highlight.js": "^9.18.1",
     "markdown-it": "^10.0.0",
-    "markdown-it-attrs": "^3.0.1",
+    "markdown-it-attrs": "^3.0.2",
     "markdown-it-div": "^1.1.0",
     "nuxt": "^2.11.0",
     "reqlim": "^0.0.0"
