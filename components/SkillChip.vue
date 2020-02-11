@@ -7,7 +7,6 @@
       contain
       :src="getSrcSvg()"
       v-bind:alt="tech"
-      v-on="on"
     />
   </div>
 </template>

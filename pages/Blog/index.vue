@@ -1,11 +1,10 @@
 <template>
   <div>
-    <v-row class="mx-auto">
-      <v-col
-        v-for="(post, key) in bloglist"
-        :key="post.title"
-        :cols="key == 0 ? 12 : 6"
-      >
+    <div v-if="!bloglist.length">
+      No post yet
+    </div>
+    <v-row v-else class="mx-auto">
+      <v-col v-for="post in bloglist" :key="post.title" :cols="12">
         <BlogCard :post="post" />
       </v-col>
     </v-row>
@@ -21,21 +20,9 @@ export default {
   },
   computed: {
     bloglist() {
-      if (!this.isPaginated) {
-        return this.$store.state.bloglist; //.slice(0,this.postsPerPage);
-      } else {
-        return this.$store.state.bloglist;
-      }
-    },
-    totalPages() {
-      return this.isPaginated
-        ? Math.ceil(this.$store.state.bloglist.length / this.postsPerPage)
-        : 1;
+      // needs pagination
+      return this.$store.state.bloglist;
     }
-  },
-  props: {
-    isPaginated: Boolean,
-    postsPerPage: Number
   }
 };
 </script>
