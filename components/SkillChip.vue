@@ -1,5 +1,5 @@
 <template>
-  <div class="skillChip">
+  <div class="skillChip d-flex">
     <v-img
       class="icon"
       height="40"
@@ -39,7 +39,8 @@ export default {
   text-align: center;
 }
 .icon {
-  filter: grayscale(95%);
+  filter: grayscale(60%);
+  align-self: center;
 }
 
 .icon:hover {
@@ -54,7 +55,7 @@ export default {
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
-    filter: grayscale(95%);
+    filter: grayscale(60%);
   }
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);

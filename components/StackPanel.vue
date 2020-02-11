@@ -36,7 +36,7 @@ import TechChip from "~/components/TechChip.vue";
 
 export default {
   props: {
-    stack: Object,
+    stack: Array,
     name: String
   },
   components: {

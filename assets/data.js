@@ -8,7 +8,7 @@ export default {
       city: "Nantes",
       country: "France"
     },
-    intro: "I mainly am a wannabe full stack web developper",
+    intro: "I mainly am a wannabe full stack web Dev",
     external: [
       {
         name: "Github",
@@ -102,7 +102,7 @@ export default {
   experiences: {
     proffesionnal: [
       {
-        role: ".NET Core Developper",
+        role: ".NET Core Dev",
         employer: {
           name: "Néo Soft",
           logo:
@@ -124,7 +124,7 @@ export default {
         },
         mission: "Complete rework of backend",
         details: `This project was built from the ground up. I was recruited for my interest in new technologies and my knowledge of legacy code. <br/>
-                  With a team of 5 developpers, we are building a new Rest API to replace the old WCF services.`,
+                  With a team of 5 Devs, we are building a new Rest API to replace the old WCF services.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -150,7 +150,7 @@ export default {
         management: "Agile"
       },
       {
-        role: ".NET Developper",
+        role: ".NET Dev",
         employer: {
           name: "Néo Soft",
           logo:
@@ -193,7 +193,7 @@ export default {
         management: "Ticketing"
       },
       {
-        role: ".NET Developper",
+        role: ".NET Dev",
         employer: {
           name: "Cap Gemini",
           logo: "https://avatars3.githubusercontent.com/u/1049773?s=400&v=4",
@@ -235,7 +235,7 @@ export default {
         management: "Agile"
       },
       {
-        role: "PHP Developper",
+        role: "PHP Dev",
         employer: {
           name: "Cap Gemini",
           logo: "https://avatars3.githubusercontent.com/u/1049773?s=400&v=4",
@@ -278,7 +278,7 @@ export default {
         management: "Agile"
       },
       {
-        role: ".NET Developper",
+        role: ".NET Dev",
         employer: {
           name: "Cap Gemini",
           logo: "https://avatars3.githubusercontent.com/u/1049773?s=400&v=4",
@@ -306,7 +306,7 @@ export default {
         management: null
       },
       {
-        role: "PHP Developper",
+        role: "PHP Dev",
         employer: {
           name: "Sopra Steria",
           logo:
@@ -344,7 +344,7 @@ export default {
         management: "V Cycle"
       },
       {
-        role: ".Net Developper",
+        role: ".Net Dev",
         employer: {
           name: "e-VConsult",
           logo: "",
@@ -375,7 +375,7 @@ export default {
     ],
     personnal: [
       {
-        role: "JS Developper",
+        role: "JS Dev",
         employer: {
           name: "Myself",
           logo: "",
@@ -411,7 +411,7 @@ export default {
         }
       },
       {
-        role: "Fullstack JS Developper",
+        role: "Fullstack JS Dev",
         employer: {
           name: "Myself",
           logo: "",
@@ -448,7 +448,7 @@ export default {
         }
       },
       {
-        role: "Fullstack JS Developper",
+        role: "Fullstack JS Dev",
         employer: {
           name: "Myself",
           logo: "",
@@ -491,7 +491,7 @@ export default {
         }
       },
       {
-        role: "JS Developper",
+        role: "JS Dev",
         employer: {
           name: "Myself",
           logo: "",

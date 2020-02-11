@@ -1,5 +1,5 @@
 <template>
-  <div class="guard">
+  <div class="guard py-4">
     <h1>Hello, I'm {{ jData.info.surname }}!</h1>
     <h2 class="mb-8">{{ jData.info.intro }}</h2>
     <h3>Find me here:</h3>
@@ -15,7 +15,11 @@
     </div>
     <h3>Some of my skills:</h3>
     <div class="d-flex flex-row mb-6 flex-wrap">
-      <div v-for="skill in jData.skills" :key="skill.name" class="pa-2">
+      <div
+        v-for="skill in jData.skills"
+        :key="skill.name"
+        class="pa-2 flex-grow-1"
+      >
         <SkillChip :tech="skill.icon" :percent="skill.level" />
       </div>
     </div>
@@ -38,4 +42,13 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  color: #f87060;
+}
+
+.guard {
+  max-width: 900px;
+  margin: auto;
+}
+</style>

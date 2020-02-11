@@ -2,16 +2,16 @@
   <v-card max-width="960" elevation="0" outlined class="mx-auto">
     <v-list-item three-line>
       <v-list-item-content>
+        <div class="overline headline mb-2">
+          <Duration
+            :dates="{
+              from: job.timeEmployed.from,
+              to: this.job.timeEmployed.to
+            }"
+          />
+        </div>
         <v-list-item-title class="headline mb-1">
-          {{ job.role }} •
-          <span class="date font-weight-light">
-            <Duration
-              :dates="{
-                from: job.timeEmployed.from,
-                to: this.job.timeEmployed.to
-              }"
-            />
-          </span>
+          {{ job.role }}
         </v-list-item-title>
         <v-list-item-subtitle class="title font-weight-light">{{
           job.mission
@@ -38,7 +38,7 @@
     <v-card-actions>
       <v-expansion-panels accordion multiple>
         <StackPanel :stack="job.stack.front" name="Front" />
-        <StackPanel :stack="job.stack.back" name="Back, Databases & Hosting" />
+        <StackPanel :stack="job.stack.back" name="Back" />
       </v-expansion-panels>
     </v-card-actions>
   </v-card>
@@ -63,10 +63,6 @@ export default {
 </script>
 
 <style scoped>
-.date {
-  font-style: italic;
-}
-
 .headline {
   color: #f87060;
 }

@@ -46,7 +46,7 @@ export default {
 }
 
 .appbar-offset {
-  margin-top: 80px;
+  margin-top: 68px;
 }
 
 #app.theme--light {

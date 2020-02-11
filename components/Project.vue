@@ -2,11 +2,11 @@
   <v-card max-width="960" elevation="0" outlined class="mx-auto">
     <v-list-item three-line>
       <v-list-item-content>
-        <v-list-item-title class="headline mb-1">
-          {{ project.mission }} •
-          <span class="date font-weight-light">
-            {{ project.timeEmployed.from.slice(0, 4) }}
-          </span>
+        <div class="overline headline mb-2">
+          {{ project.timeEmployed.from.slice(0, 4) }}
+        </div>
+        <v-list-item-title class="mb-1 headline">
+          {{ project.mission }}
         </v-list-item-title>
         <v-list-item-subtitle class="title font-weight-light">{{
           project.role
@@ -33,10 +33,7 @@
     <v-card-actions>
       <v-expansion-panels accordion multiple>
         <StackPanel :stack="project.stack.front" name="Front" />
-        <StackPanel
-          :stack="project.stack.back"
-          name="Back, Databases & Hosting"
-        />
+        <StackPanel :stack="project.stack.back" name="Back" />
       </v-expansion-panels>
     </v-card-actions>
   </v-card>
@@ -59,11 +56,8 @@ export default {
 </script>
 
 <style scoped>
-.date {
-  font-style: italic;
-}
-
 .headline {
   color: #f87060;
+  white-space: normal !important;
 }
 </style>
