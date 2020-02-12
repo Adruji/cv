@@ -1,5 +1,5 @@
 <template>
-  <v-card max-width="960" elevation="0" outlined class="mx-auto">
+  <v-card max-width="800" elevation="0" outlined class="mx-auto">
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline headline mb-2">
@@ -18,7 +18,12 @@
         }}</v-list-item-subtitle>
       </v-list-item-content>
       <v-list-item-avatar tile size="60">
-        <v-img :src="job.employer.logo"></v-img>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-img :src="job.employer.logo" v-on="on"></v-img>
+          </template>
+          <span>{{ job.employer.name }}</span>
+        </v-tooltip>
       </v-list-item-avatar>
     </v-list-item>
     <v-card-text class="text--primary">
@@ -26,8 +31,8 @@
       <v-chip
         class="mr-2 mt-2"
         :color="task.color"
-        outlined
         small
+        outlined
         v-for="task in job.tasks"
         :key="task.name"
       >

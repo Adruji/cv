@@ -1,5 +1,5 @@
 <template>
-  <v-card max-width="960" elevation="0" outlined class="mx-auto">
+  <v-card max-width="800" elevation="0" outlined class="mx-auto">
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline headline mb-2">

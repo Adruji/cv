@@ -1,28 +1,29 @@
 <template>
-  <div class="guard py-4">
-    <h1>Hello, I'm {{ jData.info.surname }}!</h1>
-    <h2 class="mb-8">{{ jData.info.intro }}</h2>
-    <h3>Find me here:</h3>
-    <div class="mb-12">
-      <v-btn
-        text
-        v-for="site in jData.info.external"
-        :key="site.name"
-        :href="site.link"
-      >
-        <v-icon>{{ site.icon }}</v-icon>
-      </v-btn>
-    </div>
-    <h3>Some of my skills:</h3>
+  <div class="guard py-4 text-center">
+    <h1 class="mb-4">Hello, I'm {{ jData.info.surname }}!</h1>
+    <h2 class="mb-10">{{ jData.info.intro }}</h2>
+    <h3 class="mb-2">I like to work with:</h3>
     <div class="d-flex flex-row mb-6 flex-wrap">
       <div
-        v-for="skill in jData.skills"
+        v-for="skill in skillList"
         :key="skill.name"
         class="pa-2 flex-grow-1"
       >
         <SkillChip :tech="skill.icon" :percent="skill.level" />
       </div>
     </div>
+    <v-btn to="/Resume" color="#f87060" dark class="mb-12">
+      Find out more here
+    </v-btn>
+    <h3 class="mb-2">You can also find me there:</h3>
+    <v-btn
+      text
+      v-for="site in jData.info.external"
+      :key="site.name"
+      :href="site.link"
+    >
+      <v-icon>{{ site.icon }}</v-icon>
+    </v-btn>
   </div>
 </template>
 
@@ -38,6 +39,18 @@ export default {
   },
   components: {
     SkillChip
+  },
+  computed: {
+    skillList() {
+      let skillList = this.jData.skills;
+      for (let i = skillList.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * i);
+        const temp = skillList[i];
+        skillList[i] = skillList[j];
+        skillList[j] = temp;
+      }
+      return skillList;
+    }
   }
 };
 </script>
@@ -48,7 +61,7 @@ h1 {
 }
 
 .guard {
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
 }
 </style>

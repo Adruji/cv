@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="text-center">
-      <v-btn depressed to="/Projects">Check my personnal projects here</v-btn>
+      <v-btn depressed to="/Projects" color="#f87060" dark
+        >Check my personnal projects here</v-btn
+      >
     </div>
     <div v-for="job in experiences" :key="job.mission" class="py-4">
       <v-lazy min-height="200" transition="fade-transition">

@@ -8,7 +8,7 @@ export default {
       city: "Nantes",
       country: "France"
     },
-    intro: "I mainly am a wannabe full stack web Dev",
+    intro: "I'm a full stack web Developer",
     external: [
       {
         name: "Github",
@@ -35,68 +35,67 @@ export default {
   skills: [
     {
       name: "Rest Api",
-      level: 80,
       icon: "swagger"
     },
     {
       name: "GraphQL Api",
-      level: 50,
       icon: "graphql"
     },
     {
       name: "Docker",
-      level: 20,
       icon: "docker"
     },
     {
       name: "Javascript",
-      level: 75,
       icon: "js"
     },
     {
       name: "VueJS",
-      level: 75,
       icon: "vuejs"
     },
     {
       name: "NuxtJS",
-      level: 60,
       icon: "nuxt"
     },
     {
       name: "Vuetify",
-      level: 70,
       icon: "vuetify"
     },
     {
       name: "Quasar",
-      level: 60,
       icon: "quasar"
     },
     {
       name: "NodeJS",
-      level: 70,
       icon: "nodejs"
     },
     {
       name: "C#",
-      level: 75,
       icon: "dotnetcore"
     },
     {
       name: "Aws",
-      level: 30,
       icon: "aws"
     },
     {
-      name: "SQL",
-      level: 50,
-      icon: "mysql"
+      name: "Postgresql",
+      icon: "postgresql"
     },
     {
       name: "Bulma",
-      level: 45,
       icon: "bulma"
+    },
+    {
+      name: "Visual studio code",
+      icon: "visualstudiocode"
+    },
+    {
+      name: "Git",
+      icon: "git"
+    },
+    {
+      name: "Gitlab",
+      icon: "gitlab"
     }
   ],
   experiences: {
@@ -104,7 +103,7 @@ export default {
       {
         role: ".NET Core Dev",
         employer: {
-          name: "Néo Soft",
+          name: "Neo Soft",
           logo:
             "https://www.neo-soft.fr/assets/front/logo-neo-soft-groupe-bleu.png",
           type: "ESN",
@@ -124,7 +123,7 @@ export default {
         },
         mission: "Complete rework of backend",
         details: `This project was built from the ground up. I was recruited for my interest in new technologies and my knowledge of legacy code. <br/>
-                  With a team of 5 Devs, we are building a new Rest API to replace the old WCF services.`,
+                  With a team of 5 developers, we are building a new Rest API to replace the old WCF services.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -152,7 +151,7 @@ export default {
       {
         role: ".NET Dev",
         employer: {
-          name: "Néo Soft",
+          name: "Neo Soft",
           logo:
             "https://www.neo-soft.fr/assets/front/logo-neo-soft-groupe-bleu.png",
           type: "ESN",
@@ -256,7 +255,8 @@ export default {
         },
         mission: "Evolutions for national distribution points software",
         details: `Joined this project to build new modules and improve performance on a aging web application. <br/>
-                  It implied doing a lot of optimisation of existing algorithms and bringing new technologies like caching.`,
+                  It implied doing a lot of optimisation of existing algorithms and bringing new technologies like caching. <br/>
+                  The team being relatively small, I was also assigned conception tasks. `,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -298,7 +298,8 @@ export default {
           to: "2016-01-17"
         },
         mission: "Maintenance",
-        details: `Built tools to speed up data analysis.`,
+        details: `Built tools to speed up data analysis. <br/>
+                  The main tool was an excel extension used to analyse results coming from a bank mainframe.`,
         tasks: [{ name: "Development", icon: "mdi-laptop", color: "grey" }],
         stack: {
           back: ["dotnet"]
@@ -328,7 +329,7 @@ export default {
         },
         mission: "Redesign et evolution of business tracker",
         details: `Second internship, participated in renovating an aging php web application. <br/>
-                  Mainly graphical but also improving global performance and loading speed.`,
+                  Mainly graphical revamp but also improving global performance and loading speed.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           {
@@ -429,8 +430,8 @@ export default {
         },
         mission: "Sport organisation PWA",
         details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
-                  I Also conceptualized the majority of the data schema, api and the whole web application. <br/>
-                  The app includes account management, geolocalisation (algolia api paired with OSM), and various others datas. <br/>
+                  I Also conceptualized the majority of the data schemas, api and the whole web application. <br/>
+                  The app includes account management, geolocalisation (Algolia api paired with OSM), and various other data. <br/>
                   Not in active development, to be resumed.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
@@ -466,10 +467,10 @@ export default {
         },
         mission: "Social network type application",
         details: `My first big scale solo project. Destined to be a large scale social app encouraging people to better themselves. <br/>
-                  First experience also with AWS, I ended up using a lot of aws products, mainly Elastic bean stalk, Cognito, Gateway, Amplify ... <br/>
+                  First experience with AWS, I ended up using a lot of it's products, mainly Elastic bean stalk, Cognito, Gateway, Amplify ... <br/>
                   Features included account management, secured api, content creation and management, data analysis... <br/>
-                  I also managed full cloud deployment on aws. <br/>
-                  Development abandonned due to new job.`,
+                  I also managed full cloud deployment on AWS. <br/>
+                  Development abandonned due to new job and lack of time.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -509,8 +510,8 @@ export default {
         },
         mission: "Discord bot",
         details: `Created a personnalized discord bot for personnal use. <br/>
-                  Originally developped for IRC, it includes a trivia game, ranking, witty interractions and more. <br/>
-                  Currently refactoring datastorage and integrating multi channel usage.`,
+                  Originally developed for IRC, it includes a trivia game, ranking, witty interractions and more. <br/>
+                  Currently refactoring data storage and integrating multi channel usage.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" }
