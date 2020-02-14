@@ -69,6 +69,21 @@ export default {
     }
   },
 
+  generate: {
+    routes: ["/Resume", "/Projets", "/Blog"],
+    async routes(callback) {
+      let files = await require.context(
+        "~/assets/blog/articles/",
+        false,
+        /\.md$/
+      );
+      files.keys().map(key => {
+        const routes = `/Blog/Article/${key.slice(2)}`;
+        callback(null, routes);
+      });
+    }
+  },
+
   vuetify: {
     optionsPath: "./vuetify.options.js"
   }

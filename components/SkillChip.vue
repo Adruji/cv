@@ -24,8 +24,7 @@ export default {
     getSrcSvg() {
       return require(`~/assets/logos/${this.tech}.svg`);
     }
-  },
-  transition: "guard"
+  }
 };
 </script>
 
@@ -39,7 +38,7 @@ export default {
   text-align: center;
 }
 .icon {
-  filter: grayscale(60%);
+  filter: grayscale(30%);
   align-self: center;
 }
 
@@ -79,16 +78,5 @@ export default {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-}
-
-.guard-enter-active,
-.guard-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 100ms;
-}
-.guard-enter,
-.guard-leave-to {
-  opacity: 0;
 }
 </style>

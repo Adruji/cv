@@ -8,7 +8,7 @@ export default {
       city: "Nantes",
       country: "France"
     },
-    intro: "I'm a full stack web Developer",
+    intro: "I'm a full stack web developer and a tech enthusiast",
     external: [
       {
         name: "Github",

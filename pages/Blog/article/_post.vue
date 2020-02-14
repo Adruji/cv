@@ -14,7 +14,9 @@
           <v-card-title v-text="attributes.title"></v-card-title>
         </v-img>
       </div>
-      <component class="markdown" :is="dynamicComponent" />
+      <v-sheet class="pa-5" elevation="1">
+        <component class="markdown" :is="dynamicComponent" />
+      </v-sheet>
     </v-container>
   </v-content>
 </template>

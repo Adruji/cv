@@ -13,7 +13,7 @@
       </div>
     </div>
     <v-btn to="/Resume" color="#f87060" dark class="mb-12">
-      Find out more here
+      <v-icon left>mdi-eye-outline</v-icon> See my experiences
     </v-btn>
     <h3 class="mb-2">You can also find me there:</h3>
     <v-btn

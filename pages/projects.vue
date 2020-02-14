@@ -18,20 +18,8 @@ export default {
     return {
       projects: data.experiences.personnal
     };
-  },
-  transition: "projects"
+  }
 };
 </script>
 
-<style scoped>
-.projects-enter-active,
-.projects-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 100ms;
-}
-.projects-enter,
-.projects-leave-to {
-  opacity: 0;
-}
-</style>
+<style scoped></style>

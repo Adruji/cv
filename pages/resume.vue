@@ -25,20 +25,8 @@ export default {
     return {
       experiences: data.experiences.proffesionnal
     };
-  },
-  transition: "resume"
+  }
 };
 </script>
 
-<style scoped>
-.resume-enter-active,
-.resume-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 100ms;
-}
-.resume-enter,
-.resume-leave-to {
-  opacity: 0;
-}
-</style>
+<style scoped></style>
