@@ -3,10 +3,12 @@
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline headline mb-2">
+          {{ job.timeEmployed.from | formatDate }} -
+          {{ job.timeEmployed.to | formatDate }} •
           <Duration
             :dates="{
               from: job.timeEmployed.from,
-              to: this.job.timeEmployed.to
+              to: job.timeEmployed.to
             }"
           />
         </div>
@@ -63,6 +65,12 @@ export default {
   },
   data: function() {
     return {};
+  },
+  filters: {
+    formatDate: date => {
+      let splitDate = new Date(date).toDateString().split(" ");
+      return `${splitDate[1]} ${splitDate[3]}`;
+    }
   }
 };
 </script>

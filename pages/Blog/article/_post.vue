@@ -22,12 +22,7 @@
 </template>
 
 <script>
-import logo from "~/components/Logo.vue";
-
 export default {
-  components: {
-    logo
-  },
   data() {
     return {
       dynamicComponent: null,

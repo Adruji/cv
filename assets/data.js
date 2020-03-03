@@ -3,7 +3,7 @@ export default {
     name: "Dujardin",
     surname: "Adrien",
     dateOfBirth: "01-12-1991",
-    contact: "adrien.duj{at}gmail.com",
+    contact: "adrien[[dot]duj{at}}gmail||dot|com",
     location: {
       city: "Nantes",
       country: "France"
@@ -13,17 +13,12 @@ export default {
       {
         name: "Github",
         icon: "mdi-github-circle",
-        link: "https://github.com/Lolwned"
+        link: "https://github.com/adruji"
       },
       {
         name: "Gitlab",
         icon: "mdi-gitlab",
-        link: "https://gitlab.com/Lolwned"
-      },
-      {
-        name: "StackOverflow",
-        icon: "mdi-stack-overflow",
-        link: "https://stackoverflow.com/users/5044822/lolwned"
+        link: "https://gitlab.com/adruji"
       },
       {
         name: "Linkedin",
@@ -387,7 +382,7 @@ export default {
           }
         },
         client: null,
-        status: "play",
+        status: "pause",
         timeEmployed: {
           from: "2019-12",
           to: null
@@ -395,7 +390,7 @@ export default {
         mission: "Creating this website",
         details: `Wanted a personnal website so here it is :) <br/>
                   No api, all data based on markdown and json files <br/> 
-                  Source can be found here: <a href="https://github.com/Lolwned/cv">source</a>.`,
+                  Source can be found here: <a href="https://github.com/adruji/cv">source</a>.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -423,7 +418,7 @@ export default {
           }
         },
         client: null,
-        status: "pause",
+        status: "play",
         timeEmployed: {
           from: "2019-01",
           to: null
@@ -432,7 +427,7 @@ export default {
         details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
                   I Also conceptualized the majority of the data schemas, api and the whole web application. <br/>
                   The app includes account management, geolocalisation (Algolia api paired with OSM), and various other data. <br/>
-                  Not in active development, to be resumed.`,
+                  Currently migrating to prisma 2 and typescript.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -444,7 +439,14 @@ export default {
           }
         ],
         stack: {
-          back: ["nodejs", "graphql", "postgresql", "heroku", "gitlab"],
+          back: [
+            "typescript",
+            "nodejs",
+            "graphql",
+            "postgresql",
+            "heroku",
+            "gitlab"
+          ],
           front: ["vuejs", "nuxt", "apollo", "bulma"]
         }
       },
@@ -511,13 +513,13 @@ export default {
         mission: "Discord bot",
         details: `Created a personnalized discord bot for personnal use. <br/>
                   Originally developed for IRC, it includes a trivia game, ranking, witty interractions and more. <br/>
-                  Currently refactoring data storage and integrating multi channel usage.`,
+                  Recently added support for db storage and multiple servers/channels.`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" }
         ],
         stack: {
-          back: ["nodejs", "discordjs", "gitlab"]
+          back: ["nodejs", "discordjs", "sqlite", "gitlab"]
         }
       }
     ]
