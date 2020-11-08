@@ -12,7 +12,7 @@ export default {
     external: [
       {
         name: "Github",
-        icon: "mdi-github-circle",
+        icon: "mdi-github",
         link: "https://github.com/adruji"
       },
       {
@@ -57,10 +57,6 @@ export default {
       icon: "vuetify"
     },
     {
-      name: "Quasar",
-      icon: "quasar"
-    },
-    {
       name: "NodeJS",
       icon: "nodejs"
     },
@@ -91,6 +87,18 @@ export default {
     {
       name: "Gitlab",
       icon: "gitlab"
+    },
+    {
+      name: "Flutter",
+      icon: "flutter"
+    },
+    {
+      name: "Tailwind Css",
+      icon: "tailwind"
+    },
+    {
+      name: "Typescript",
+      icon: "typescript"
     }
   ],
   experiences: {
@@ -371,6 +379,114 @@ export default {
     ],
     personnal: [
       {
+        role: "FullStack JS Developer",
+        employer: {
+          name: "Myself",
+          logo: "",
+          type: "",
+          location: {
+            city: "Nantes",
+            country: "France"
+          }
+        },
+        client: null,
+        status: "play",
+        timeEmployed: {
+          from: "2020-10",
+          to: null
+        },
+        mission: "France best departement finder",
+        details: `Interactive website where you can choose and adjust multiple criterias to find your best spot in France !<br>
+                  Huge script to gather lots of data and compute it into a json file localy served with the app.<br>
+                  URL tbd :)`,
+        tasks: [
+          { name: "Development", icon: "mdi-laptop", color: "grey" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+          { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
+          {
+            name: "Deployment",
+            icon: "mdi-cloud-upload-outline",
+            color: "orange lighten-2"
+          }
+        ],
+        stack: {
+          back: ["github", "zeit"],
+          front: ["vuejs", "nuxt", "bulma"]
+        }
+      },
+      {
+        role: "Flutter Dev",
+        employer: {
+          name: "Myself",
+          logo: "",
+          type: "",
+          location: {
+            city: "Nantes",
+            country: "France"
+          }
+        },
+        client: null,
+        status: "check",
+        timeEmployed: {
+          from: "2020-07",
+          to: "2019-10"
+        },
+        mission: "Recipe converter/balancer",
+        details: `First app made using Flutter. It gives you all the tools to save, convert and balance your recipes.<br>
+                  With an extended local food database, it's possible to convert volumes to weight with ease.
+                  Fully local app with no backend, no account. <br>
+                  <a href="https://play.google.com/store/apps/details?id=com.codembert.recipe_converter">Download here</a>`,
+        tasks: [
+          { name: "Development", icon: "mdi-laptop", color: "grey" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+          { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
+          {
+            name: "Deployment",
+            icon: "mdi-cloud-upload-outline",
+            color: "orange lighten-2"
+          }
+        ],
+        stack: {
+          front: ["flutter"]
+        }
+      },
+      {
+        role: "Fullstack JS Dev",
+        employer: {
+          name: "Myself",
+          logo: "",
+          type: "",
+          location: {
+            city: "Nantes",
+            country: "France"
+          }
+        },
+        client: null,
+        status: "check",
+        timeEmployed: {
+          from: "2020-05",
+          to: "2019-07"
+        },
+        mission: "Team splitter",
+        details: `Light version of my 2019 sport project. PWA packaged to be available on play store.<br/>
+                  Small front end with a equally small Rest API.<br>
+                  <a href="https://play.google.com/store/apps/details?id=com.herokuapp.splite.twa">Download here</a>`,
+        tasks: [
+          { name: "Development", icon: "mdi-laptop", color: "grey" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+          { name: "Architecture", icon: "mdi-city", color: "blue lighten-2" },
+          {
+            name: "Deployment",
+            icon: "mdi-cloud-upload-outline",
+            color: "orange lighten-2"
+          }
+        ],
+        stack: {
+          back: ["nodejs", "postgresql", "heroku", "gitlab"],
+          front: ["vuejs", "nuxt", "tailwind"]
+        }
+      },
+      {
         role: "JS Dev",
         employer: {
           name: "Myself",
@@ -418,10 +534,10 @@ export default {
           }
         },
         client: null,
-        status: "play",
+        status: "stop",
         timeEmployed: {
           from: "2019-01",
-          to: null
+          to: "2019-12"
         },
         mission: "Sport organisation PWA",
         details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
