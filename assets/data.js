@@ -8,7 +8,7 @@ export default {
       city: "Nantes",
       country: "France"
     },
-    intro: "I'm a full stack web developer and a tech enthusiast",
+    intro: "I'm a human, and a full stack web developer",
     external: [
       {
         name: "Github",
@@ -29,7 +29,7 @@ export default {
   },
   skills: [
     {
-      name: "Rest Api",
+      name: "Swagger",
       icon: "swagger"
     },
     {
@@ -102,7 +102,44 @@ export default {
     }
   ],
   experiences: {
-    proffesionnal: [
+    professional: [
+      {
+        role: ".NET Dev",
+        employer: {
+          name: "Neo Soft",
+          logo:
+            "https://www.neo-soft.fr/assets/front/logo-neo-soft-groupe-bleu.png",
+          type: "ESN",
+          location: {
+            city: "Nantes",
+            country: "France"
+          }
+        },
+        client: {
+          name: "SGS",
+          logo: "",
+          type: "Services"
+        },
+        timeEmployed: {
+          from: "2020-11-16",
+          to: "2021-09-17"
+        },
+        mission: "Partial rework of backend and maintenance",
+        details: `In charge of maintaining the legacy SOAP Api first, I quickly pushed to build a new version of this Api using the latest version of DotNet technologies (Net 5, Entity, Swagger).`,
+        tasks: [
+          { name: "Development", icon: "mdi-laptop", color: "grey" },
+          { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
+          {
+            name: "Legacy reverse engineering",
+            icon: "mdi-cached",
+            color: "red accent-2"
+          }
+        ],
+        stack: {
+          back: ["dotnetcore", "oracle", "swagger"]
+        },
+        management: "Agile"
+      },
       {
         role: ".NET Core Dev",
         employer: {
@@ -122,7 +159,7 @@ export default {
         },
         timeEmployed: {
           from: "2019-06-25",
-          to: Date.now()
+          to: "2020-05-31"
         },
         mission: "Complete rework of backend",
         details: `This project was built from the ground up. I was recruited for my interest in new technologies and my knowledge of legacy code. <br/>
@@ -398,7 +435,7 @@ export default {
         mission: "France best departement finder",
         details: `Interactive website where you can choose and adjust multiple criterias to find your best spot in France !<br>
                   Huge script to gather lots of data and compute it into a json file localy served with the app.<br>
-                  URL tbd :)`,
+                  <a href="https://meilleurdepartement.fr/">Check it over here</a>`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -410,7 +447,7 @@ export default {
           }
         ],
         stack: {
-          back: ["github", "zeit"],
+          back: ["github", "vercel"],
           front: ["vuejs", "nuxt", "bulma"]
         }
       },
@@ -518,7 +555,7 @@ export default {
           }
         ],
         stack: {
-          back: ["github", "zeit"],
+          back: ["github", "vercel"],
           front: ["vuejs", "nuxt", "vuetify"]
         }
       },
@@ -542,8 +579,7 @@ export default {
         mission: "Sport organisation PWA",
         details: `Project initially started as a two man team. My role covered the entire stack (see below).<br/>
                   I Also conceptualized the majority of the data schemas, api and the whole web application. <br/>
-                  The app includes account management, geolocalisation (Algolia api paired with OSM), and various other data. <br/>
-                  Currently migrating to prisma 2 and typescript.`,
+                  The app includes account management, geolocalisation (Algolia api paired with OSM), and various other data. <br/>`,
         tasks: [
           { name: "Development", icon: "mdi-laptop", color: "grey" },
           { name: "Conception", icon: "mdi-pencil", color: "purple lighten-2" },
@@ -557,6 +593,7 @@ export default {
         stack: {
           back: [
             "typescript",
+            "prisma",
             "nodejs",
             "graphql",
             "postgresql",
@@ -621,7 +658,7 @@ export default {
           }
         },
         client: null,
-        status: "play",
+        status: "stop",
         timeEmployed: {
           from: "2017-04",
           to: null
