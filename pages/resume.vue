@@ -23,7 +23,7 @@ export default {
   },
   data: function() {
     return {
-      experiences: data.experiences.proffesionnal
+      experiences: data.experiences.professional
     };
   }
 };
